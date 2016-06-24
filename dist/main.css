@@ -4143,8 +4143,8 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]),
   input[type=search]:focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #26a69a;
-    box-shadow: 0 1px 0 0 #26a69a; }
+    border-bottom: 1px solid #ff8f00;
+    box-shadow: 0 1px 0 0 #ff8f00; }
   input:not([type]):focus:not([readonly]) + label,
   input[type=text]:focus:not([readonly]) + label,
   input[type=password]:focus:not([readonly]) + label,
@@ -4158,7 +4158,7 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]) + label,
   input[type=search]:focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #26a69a; }
+    color: #ff8f00; }
   input:not([type]).valid, input:not([type]):focus.valid,
   input[type=text].valid,
   input[type=text]:focus.valid,
@@ -4326,7 +4326,7 @@ textarea.materialize-textarea {
     font-size: 2rem;
     transition: color .2s; }
     .input-field .prefix.active {
-      color: #26a69a; }
+      color: #ff8f00; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea {
     margin-left: 3rem;
@@ -6231,3 +6231,34 @@ body {
 
 .brand-logo img {
   box-shadow: 0 0 8px 0px #777; }
+
+.slider {
+  height: 700px !important; }
+  .slider .slides {
+    height: 700px !important; }
+
+.materialboxed {
+  height: 155px;
+  margin: 0 auto 15px;
+  position: relative;
+  display: block;
+  background-color: #F67611; }
+
+.carousel-item {
+  width: 700px !important; }
+
+.padding-top {
+  padding-top: 70px; }
+
+.padding-bottom {
+  padding-bottom: 70px; }
+
+.page-footer {
+  margin-top: 0 !important; }
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 400px !important;
+    width: 250px !important; }
+    .slider .slides {
+      height: 400px !important; } }
