@@ -6,14 +6,15 @@ $orange: #F67611;
 
 
 body
-	background: #eee
+	background-color: #eee;
+
 .brand-logo
 	img
 		box-shadow: 0 0 8px 0px #777
 .slider
-	height: 700px !important
+	height: 500px !important
 	.slides
-		height: 700px !important
+		height: 500px !important
 .materialboxed
 	height: 155px
 	margin: 0 auto 15px
@@ -21,19 +22,43 @@ body
 	display: block
 	background-color: #F67611
 .carousel-item
-	width: 700px !important
+	width: 700px 
+	height: 320px
+	top: 150px !important
 .padding-top
-	padding-top: 70px
+	padding-top: 90px
 .padding-bottom
 	padding-bottom: 70px
 .page-footer
 	margin-top: 0 !important
-
+.bg-leaves
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		background-image: url('./img/bg.jpg');
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		z-index: -1
+		opacity: .4
 @media screen and (max-width: 768px)
 	.slider
 		height: 400px !important
 		.slides
 			height: 400px !important
-  .carousel-item
-		width: 250px !important
+	.padding-top
+		padding-top: 35px
+	.padding-bottom
+		padding-bottom: 35px
+	.carousel-item
+		width: 200px 
+
+	.input-field .prefix ~ input, .input-field .prefix ~ textarea
+		margin-left: 0
+	.prefix ~ label
+		margin-left: 0
+	.input-field .prefix ~ label
+		margin-left: 0
 

@@ -11,13 +11,34 @@
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper">
-					<a href="#!" class="brand-logo center">
-						<img src="./img/madeiro.png" alt="Logo Madeiro Apartamentos" width="180">
-					</a>
+					<div class="row">
+						<div class="col l6 offset-l3 s12">
+							<div class="row">
+									
+								<div class="col l4">
+									<ul id="nav-mobile" class="hide-on-med-and-down right">
+						        <li><a href="#home">Home</a></li>
+						        <li><a href="#contacto">Contacto</a></li>
+						      </ul>
+								</div>
+					      <div class="col l4 s12 center">
+									<a href="#home">
+										<img src="./img/madeiro.png" alt="Logo Madeiro Apartamentos" width="180">
+									</a>
+					      </div>
+					      <div class="col l4">
+					      	<ul id="nav-mobile" class="hide-on-med-and-down left">
+						        <li><a href="#galeria">Galería</a></li>
+						        <li><a href="#planos">Planos</a></li>
+						      </ul>
+					      </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</div>
-		<div class="slider">
+		<div class="slider" id="home">
 			<ul class="slides">
 				<li><img src="./img/4-render.jpg"></li>
 				<li><img src="./img/6-render.jpg"></li>
@@ -28,39 +49,40 @@
 			</ul>
 		</div>
 		
-		<div class="container padding-top">
+		<div class="container padding-top text-amber" id="contacto">
 			<div class="row">
+					<h3 class="center amber-text text-darken-4">Acércate a la experiencia Madeiro</h3>
 				<div class="col s12">
 					<div class="row">
-						 <form class="col s12">
+						 <form class="col s12" action="send.php" method="post">
 				        <div class="input-field col l6 s12">
-                  <i class="material-icons prefix">account_circle</i>
-				          <input id="first_name" type="text" class="validate">
+                  <i class="material-icons hide-on-med-and-down prefix">account_circle</i>
+				          <input id="first_name" type="text" class="validate" name="nombre" required>
 				          <label for="first_name">Nombre</label>
 				        </div>
 				        <div class="input-field col l6 s12">
-				          <i class="material-icons prefix">email</i>
-					          <input id="icon_telephone" type="tel" class="validate">
+				          <i class="material-icons hide-on-med-and-down prefix">email</i>
+					          <input id="icon_telephone" type="tel" class="validate" name="email" required>
 					          <label for="icon_telephone">Email</label>
 				        </div>
 				        <div class="input-field col l6 s12">
-                  <i class="material-icons prefix">phone</i>
-				          <input id="first_name" type="text" class="validate">
+                  <i class="material-icons hide-on-med-and-down prefix">phone</i>
+				          <input id="first_name" type="text" class="validate" name="telefono" required>
 				          <label for="first_name">Teléfono</label>
 				        </div>
 				        <div class="input-field col l6 s12">
-				          <i class="material-icons prefix">settings_cell</i>
-					          <input id="icon_telephone" type="tel" class="validate">
+				          <i class="material-icons hide-on-med-and-down prefix">settings_cell</i>
+					          <input id="icon_telephone" type="tel" class="validate" name="celular" required>
 					          <label for="icon_telephone">Celular</label>
 				        </div>
-				        <div class="input-field col s12">          <i class="material-icons prefix">mode_edit</i>
+				        <div class="input-field col s12">          <i class="material-icons hide-on-med-and-down prefix">mode_edit</i>
 
-				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+				          <textarea id="textarea1" class="materialize-textarea" name="mensaje" required></textarea>
 				          <label for="textarea1">Mensaje</label>
 				        </div>
 				      <div class="row center">
-					      <button class="btn waves-effect waves-light amber" type="submit" name="action">Submit
-							    <i class="material-icons right">send</i>
+					      <button class="btn waves-effect waves-light amber" type="submit">Enviar
+							    <i class="material-icons hide-on-med-and-down right">send</i>
 							  </button>
 				      </div>
 				    </form>
@@ -68,52 +90,51 @@
 				</div>
 			</div>
 		</div>
-		<div class="grey lighten-5">
+		<div class="bg-leaves" id="galeria">
 			<div class="container padding-top">
 				 <div class="carousel">
-			    <a class="carousel-item" href="#one!"><img src="./img/1-render.jpg"></a>
-			    <a class="carousel-item" href="#two!"><img src="./img/1-render.jpg"></a>
-			    <a class="carousel-item" href="#three!"><img src="./img/1-render.jpg"></a>
-			    <a class="carousel-item" href="#four!"><img src="./img/1-render.jpg"></a>
-			    <a class="carousel-item" href="#five!"><img src="./img/1-render.jpg"></a>
+			    <a class="carousel-item" href="#one!"><img src="./img/madeiro1.jpg"></a>
+			    <a class="carousel-item" href="#two!"><img src="./img/madeiro2.jpg"></a>
+			    <a class="carousel-item" href="#three!"><img src="./img/madeiro3.jpg"></a>
+			    <a class="carousel-item" href="#four!"><img src="./img/madeiro4.jpg"></a>
+			    <a class="carousel-item" href="#five!"><img src="./img/madeiro5.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/madeiro6.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/madeiro7.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/madeiro8.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/saloncomunal.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/saloninfantil.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/salonjovenes.jpg"></a>
+			    <a class="carousel-item" href="#six!"><img src="./img/terraza.jpg"></a>
 			  </div>
 			</div>
 		</div>	
-		<div class="container padding-top padding-bottom">
+		<div class="container padding-top padding-bottom" id="planos">
 			<div class="row">
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-1.png">
+					<img class="materialboxed"  src="./img/plano-1.png">
 				</div>
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-2.png">
+					<img class="materialboxed"  src="./img/plano-2.png">
 				</div>
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-3.png">
+					<img class="materialboxed"  src="./img/plano-3.png">
 				</div>
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-4.png">
+					<img class="materialboxed"  src="./img/plano-4.png">
 				</div>
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-5.png">
+					<img class="materialboxed"  src="./img/plano-5.png">
 				</div>
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-6.png">
+					<img class="materialboxed"  src="./img/plano-6.png">
 				</div>
 				<div class="col l3 s12">
-					<img class="materialboxed" data-caption="descripción de la foto"  src="./img/plano-7.png">
+					<img class="materialboxed"  src="./img/plano-7.png">
 				</div>
 			</div>
 		</div>
 
 
-
-
-
-
-
-
-					
-		
 		<footer class="page-footer">
       <div class="container">
         <div class="row">
