@@ -17,8 +17,8 @@ function sendMail($emailSender, $subject, $message) {
 
 	$envio = mail($emailToSend, $subject, $message, $cabeceras);
 	if ($envio == true) {
-		header("Location: ./");
-	}
+		header("Location: ./gracias.html");
+	}   
 }
 
 function contacto($nombre, $email, $mensaje, $telefono, $celular){

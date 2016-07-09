@@ -25,7 +25,8 @@ gulp.task('styles', function() {
 	gulp.src('./src/css/*.{sass, scss}')
 		.pipe(plumber(plumberErrorHandler))
 		.pipe(sass())
-		.pipe(gulp.dest('./dist'))
+		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+ 		.pipe(gulp.dest('./dist'))
 		.pipe(livereload());
  
 });
